@@ -14,6 +14,31 @@ I'm a blockchain developer specializing in Solana ecosystem development with exp
 - Copy trading systems
 - Liquidity sniping techniques
 
+## 🛠️ Tech Stack
+
+### Primary Languages:
+
+- Rust (Solana programs, performance-critical systems)
+- TypeScript (Fullstack dApps, backend services)
+- Golang (High-performance networking, concurrent systems)
+- Python (Data analysis, scripting, trading strategies)
+- C++ (Low-latency systems, performance optimization)
+
+### Blockchain Specialization:
+
+- Solana (Anchor framework, PDAs, CPI)
+- Ethereum/Solidity (DeFi protocols, smart contracts)
+- Web3.js/ethers.js (Blockchain interactions)
+- Serum DEX (On-chain order book systems)
+
+## 🔭 Currently Working On
+
+- Building next-gen MEV strategies for Solana memecoins
+- Developing a low-latency trading bot framework in Rust
+- Researching cross-chain arbitrage opportunities
+- Optimizing Jito-Solana bundles for maximum efficiency
+- Creating educational content about on-chain trading strategies
+
 ## 📫 Contact
 For consulting or collaboration:
 - Twitter: [@hodlwarden](https://twitter.com/hodlwarden)
