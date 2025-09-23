@@ -5,7 +5,6 @@
 
 Software Engineer with a passion for solving complex problems | Rust | Web3 | Solidity | Defi | Dex | AI Agent
 
-### Contact
 
 - Twitter: [@hodlwarden](https://twitter.com/hodlwarden)
 - Telegram: [@hodlwarden](https://t.me/hodlwarden)
