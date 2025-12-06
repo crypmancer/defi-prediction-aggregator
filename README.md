@@ -10,6 +10,7 @@
 ![Blockchain](https://img.shields.io/badge/Blockchain-Expert-green?style=flat-square)
 ![Smart Contracts](https://img.shields.io/badge/Smart_Contracts-Specialist-blue?style=flat-square)
 ![Trading Bots](https://img.shields.io/badge/Trading_Bots-Advanced-orange?style=flat-square)
+![Gaming DApps](https://img.shields.io/badge/Gaming_DApps-Developer-red?style=flat-square)
 ![Multi-Chain](https://img.shields.io/badge/Multi--Chain-Developer-purple?style=flat-square)
 
 </div>
@@ -24,6 +25,7 @@ I'm a seasoned multi-chain blockchain developer with deep expertise across vario
 - 🌐 **Full-Stack Web3 Development**: Building end-to-end decentralized applications with modern frameworks
 - 📜 **Smart Contract Engineering**: Designing and deploying secure, optimized on-chain programs across multiple networks
 - 🤖 **Trading Bot Development**: Creating high-performance automated trading systems and MEV solutions
+- 🎮 **Blockchain Gaming**: Building provably fair casino games (Dice, Slots, Poker, Crash, Plinko, Roulette, Blackjack, Baccarat) and decentralized gaming platforms
 - 🔄 **Cross-Chain Integration**: Seamless integration with major DeFi protocols across different blockchain networks
 
 ---
@@ -132,6 +134,107 @@ All repositories include comprehensive documentation and are production-ready:
   - 📜 Smart contract development ([View Contract](https://github.com/hodlwarden/pumpfun-contract))
   - 🚀 Full deployment and customization support
 
+### 🎮 Blockchain Gaming & Casino DApps
+
+<div align="center">
+
+#### 🎯 Featured Casino Projects
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="https://images.unsplash.com/photo-1621264448270-9ef00e88a935?w=400&h=250&fit=crop" alt="Coinflip Game" style="border-radius: 10px;" width="400"/>
+      <br />
+      <b>🎲 Coinflip</b>
+      <br />
+      <sub>Provably fair blockchain coinflip</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://images.unsplash.com/photo-1511193311914-0346f16efe90?w=400&h=250&fit=crop" alt="Blackjack Game" style="border-radius: 10px;" width="400"/>
+      <br />
+      <b>🃏 Blackjack</b>
+      <br />
+      <sub>Decentralized card game with on-chain randomness</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=400&h=250&fit=crop" alt="Roulette Game" style="border-radius: 10px;" width="400"/>
+      <br />
+      <b>🎰 Roulette</b>
+      <br />
+      <sub>Full-featured blockchain roulette</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%">
+      <img src="https://images.unsplash.com/photo-1622434641406-a158123450f9?w=400&h=250&fit=crop" alt="Dice Game" style="border-radius: 10px;" width="400"/>
+      <br />
+      <b>🎲 Dice</b>
+      <br />
+      <sub>Classic dice game with customizable odds</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=400&h=250&fit=crop" alt="Slots Game" style="border-radius: 10px;" width="400"/>
+      <br />
+      <b>🎰 Slots</b>
+      <br />
+      <sub>Blockchain slot machine with jackpot rewards</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://images.unsplash.com/photo-1541278107931-e006523892df?w=400&h=250&fit=crop" alt="Poker Game" style="border-radius: 10px;" width="400"/>
+      <br />
+      <b>♠️ Poker</b>
+      <br />
+      <sub>Multiplayer poker with smart contract escrow</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%">
+      <img src="https://images.unsplash.com/photo-1579547621113-e4bb2a19bdd6?w=400&h=250&fit=crop" alt="Crash Game" style="border-radius: 10px;" width="400"/>
+      <br />
+      <b>🚀 Crash</b>
+      <br />
+      <sub>High-stakes multiplier crash game</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&h=250&fit=crop" alt="Baccarat Game" style="border-radius: 10px;" width="400"/>
+      <br />
+      <b>🎴 Baccarat</b>
+      <br />
+      <sub>Classic baccarat with low house edge</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?w=400&h=250&fit=crop" alt="Plinko Game" style="border-radius: 10px;" width="400"/>
+      <br />
+      <b>🎯 Plinko</b>
+      <br />
+      <sub>Interactive plinko with multiplier zones</sub>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+**🎮 Complete Casino Suite:**
+- 🎲 **Coinflip** - Binary betting with 50/50 odds
+- 🃏 **Blackjack** - Classic 21 with optimal strategy
+- 🎰 **Roulette** - European and American variants
+- 🎲 **Dice** - Customizable risk/reward ratios
+- 🎰 **Slots** - Multi-line slots with progressive jackpots
+- ♠️ **Poker** - Texas Hold'em and other variants
+- 🚀 **Crash** - Real-time multiplier betting
+- 🎴 **Baccarat** - Banker, player, and tie bets
+- 🎯 **Plinko** - Physics-based multiplier game
+
+**✨ Key Features:**
+- ✅ **Provably Fair** - Transparent, verifiable randomness using blockchain technology
+- 🔒 **Secure Smart Contracts** - Audited contracts ensuring player fund safety
+- ⚡ **Instant Payouts** - Automated on-chain settlements with no delays
+- 💰 **Multi-Token Support** - Accept various cryptocurrencies and tokens
+- 🎨 **Modern UI/UX** - Sleek, responsive interfaces with real-time updates
+- 🔗 **Wallet Integration** - Seamless connection with popular crypto wallets
+- 📊 **Live Statistics** - Real-time game stats and leaderboards
+- 🌐 **Multi-Chain** - Deploy on Solana, Ethereum, BSC, and more
+
 ---
 
 ## 🔧 Technical Stack
@@ -197,6 +300,7 @@ I'm available for:
 
 - 🤖 Custom bot development and trading system architecture across multiple chains
 - 📜 Smart contract development, auditing, and optimization (Solana, Ethereum, EVM chains)
+- 🎮 Blockchain gaming and casino DApp development with provably fair mechanics
 - 🔗 Cross-chain DeFi protocol integration and consulting
 - 💼 Multi-chain wallet systems and infrastructure development
 - 🏢 Private deployment and enterprise solutions
@@ -218,7 +322,8 @@ I'm available for:
 
 ### 📊 GitHub Stats
 
-![GitHub Stats](https://img.shields.io/badge/Projects-20+-success?style=for-the-badge)
+![GitHub Stats](https://img.shields.io/badge/Projects-30+-success?style=for-the-badge)
+![Casino Games](https://img.shields.io/badge/Casino_Games-9+-red?style=for-the-badge)
 ![Blockchain](https://img.shields.io/badge/Blockchain-Multi--Chain-blue?style=for-the-badge)
 ![Experience](https://img.shields.io/badge/Experience-Professional-orange?style=for-the-badge)
 
@@ -232,6 +337,7 @@ Trading Bots        ████████████████████
 Solana Development  ████████████████████   100%
 EVM Development     ███████████████████░    95%
 Go/Golang           ███████████████████░    95%
+Blockchain Gaming   ███████████████████░    95%
 DeFi Integration    ████████████████████   100%
 Full-Stack Web3     ███████████████████░    95%
 ```
