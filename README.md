@@ -84,9 +84,9 @@ All repositories include comprehensive documentation and are production-ready:
 | 🤖 Project | 📝 Description | 🔗 Link |
 |---------|-------------|------|
 | **Pump.fun Sniper** | Demo version of token sniping bot | [View Repository](https://github.com/hodlwarden/pumpfun-sniper) ⭐ |
-| **Pump.fun Bundler** | Multi-wallet bundling (3 wallets) | [View Repository](https://github.com/hodlwarden/pumpfun-bundler) ⭐ |
+| **Pump.fun Bundler** | Multi-wallet bundling (3 wallets) | [View Repository](https://github.com/hodlwarden/pumpfun-pumpswap-bundler) ⭐ |
 | **Pump.fun Volume Bot** | Single wallet volume generation | [View Repository](https://github.com/hodlwarden/pumpfun-volume-bot) ⭐ |
-| **Copy Trading Bot** | Automated copy trading for Pump.fun tokens | [View Repository](https://github.com/hodlwarden/pumpfun-copy-trading-bot) ⭐ |
+| **Copy Trading Bot** | Automated copy trading for Pump.fun tokens | [View Repository](https://github.com/hodlwarden/solana-copy-trading-bot-rust) ⭐ |
 | **Maker + Volume Bot** | Combined maker and volume bot (Beta) | [View Repository](https://github.com/hodlwarden/pumpfun-maker-volume-bot-beta) ⭐ |
 | **Raydium Volume Bot** | Single wallet volume generation for Raydium | [View Repository](https://github.com/hodlwarden/raydium-volume-bot) ⭐ |
 | **Twitter Solana Sniper** | Token sniping based on Twitter signals | [View Repository](https://github.com/hodlwarden/solana-twitter-sniper) ⭐ |
@@ -326,21 +326,6 @@ I'm available for:
 ![Casino Games](https://img.shields.io/badge/Casino_Games-9+-red?style=for-the-badge)
 ![Blockchain](https://img.shields.io/badge/Blockchain-Multi--Chain-blue?style=for-the-badge)
 ![Experience](https://img.shields.io/badge/Experience-Professional-orange?style=for-the-badge)
-
----
-
-### 🌟 Skills Overview
-
-```text
-Smart Contracts     ████████████████████   100%
-Trading Bots        ████████████████████   100%
-Solana Development  ████████████████████   100%
-EVM Development     ███████████████████░    95%
-Go/Golang           ███████████████████░    95%
-Blockchain Gaming   ███████████████████░    95%
-DeFi Integration    ████████████████████   100%
-Full-Stack Web3     ███████████████████░    95%
-```
 
 ---
 
