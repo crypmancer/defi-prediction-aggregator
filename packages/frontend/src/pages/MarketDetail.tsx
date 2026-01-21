@@ -4,19 +4,8 @@ import axios from 'axios'
 import { TrendingUp, Clock, DollarSign, Brain } from 'lucide-react'
 import { useState } from 'react'
 import { useWallet } from '../contexts/WalletContext'
-
-interface Market {
-  marketId: string
-  platform: string
-  question: string
-  endTime: number
-  totalVolume: number
-  yesPrice: number
-  noPrice: number
-  resolved: boolean
-  outcome?: boolean
-  aiConfidence?: number
-}
+import { USE_MOCK_DATA } from '../config'
+import { mockAPI, type Market } from '../services/mockData'
 
 export default function MarketDetail() {
   const { marketId } = useParams()
@@ -27,6 +16,9 @@ export default function MarketDetail() {
   const { data: market, isLoading } = useQuery({
     queryKey: ['market', marketId],
     queryFn: async () => {
+      if (USE_MOCK_DATA) {
+        return await mockAPI.getMarket(marketId!)
+      }
       const response = await axios.get(`/api/predictions/${marketId}`)
       return response.data.data as Market
     },
@@ -38,6 +30,9 @@ export default function MarketDetail() {
     queryKey: ['ai-analysis', marketId],
     queryFn: async () => {
       if (!market) return null
+      if (USE_MOCK_DATA) {
+        return await mockAPI.analyzeMarket(marketId!, market)
+      }
       const response = await axios.post('/api/ai/analyze', {
         marketId,
         marketData: market,

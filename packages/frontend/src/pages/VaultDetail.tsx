@@ -4,17 +4,8 @@ import axios from 'axios'
 import { Coins, TrendingUp, Lock, DollarSign } from 'lucide-react'
 import { useState } from 'react'
 import { useWallet } from '../contexts/WalletContext'
-
-interface Vault {
-  address: string
-  depositToken: string
-  totalAssets: string
-  totalShares: string
-  performanceFeeBps: number
-  managementFeeBps: number
-  minDeposit: string
-  vaultCap: string
-}
+import { USE_MOCK_DATA } from '../config'
+import { mockAPI, type Vault } from '../services/mockData'
 
 export default function VaultDetail() {
   const { address } = useParams()
@@ -25,6 +16,9 @@ export default function VaultDetail() {
   const { data: vault, isLoading } = useQuery({
     queryKey: ['vault', address],
     queryFn: async () => {
+      if (USE_MOCK_DATA) {
+        return await mockAPI.getVault(address!)
+      }
       const response = await axios.get(`/api/vaults/${address}`)
       return response.data.data as Vault
     },

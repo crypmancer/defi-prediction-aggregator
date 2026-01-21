@@ -2,22 +2,16 @@ import { useQuery } from '@tanstack/react-query'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { Coins, TrendingUp, Lock } from 'lucide-react'
-
-interface Vault {
-  address: string
-  depositToken: string
-  totalAssets: string
-  totalShares: string
-  performanceFeeBps: number
-  managementFeeBps: number
-  minDeposit: string
-  vaultCap: string
-}
+import { USE_MOCK_DATA } from '../config'
+import { mockAPI, type Vault } from '../services/mockData'
 
 export default function Vaults() {
   const { data: vaults, isLoading, error } = useQuery({
     queryKey: ['vaults'],
     queryFn: async () => {
+      if (USE_MOCK_DATA) {
+        return await mockAPI.getVaults()
+      }
       const response = await axios.get('/api/vaults')
       return response.data.data as Vault[]
     },

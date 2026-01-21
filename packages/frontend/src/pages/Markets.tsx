@@ -2,23 +2,16 @@ import { useQuery } from '@tanstack/react-query'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { TrendingUp, Clock, DollarSign } from 'lucide-react'
-
-interface Market {
-  marketId: string
-  platform: string
-  question: string
-  endTime: number
-  totalVolume: number
-  yesPrice: number
-  noPrice: number
-  resolved: boolean
-  aiConfidence?: number
-}
+import { USE_MOCK_DATA } from '../config'
+import { mockAPI, type Market } from '../services/mockData'
 
 export default function Markets() {
   const { data, isLoading, error } = useQuery({
     queryKey: ['markets'],
     queryFn: async () => {
+      if (USE_MOCK_DATA) {
+        return await mockAPI.getMarkets()
+      }
       const response = await axios.get('/api/predictions')
       return response.data.data as Market[]
     },
