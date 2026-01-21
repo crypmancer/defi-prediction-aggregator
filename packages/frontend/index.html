@@ -5,6 +5,38 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OracleVault - AI-Enhanced Prediction Markets</title>
+    <script>
+      // Prevent flash of unstyled content by applying theme before React loads
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        let theme = 'dark'; // default
+        
+        if (savedTheme === 'light' || savedTheme === 'dark') {
+          theme = savedTheme;
+        } else {
+          // Check system preference if no saved theme
+          if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            theme = 'dark';
+          } else {
+            theme = 'light';
+          }
+          // Save the determined theme to localStorage
+          localStorage.setItem('theme', theme);
+        }
+        
+        document.documentElement.classList.add(theme);
+        document.documentElement.style.colorScheme = theme;
+        
+        // Set body background immediately
+        if (theme === 'dark') {
+          document.body.style.backgroundColor = '#0f172a';
+          document.body.style.color = '#f1f5f9';
+        } else {
+          document.body.style.backgroundColor = '#f8fafc';
+          document.body.style.color = '#0f172a';
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

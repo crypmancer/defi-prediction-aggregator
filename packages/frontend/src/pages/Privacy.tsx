@@ -1,14 +1,16 @@
 export default function Privacy() {
   return (
-    <div className="max-w-4xl mx-auto space-y-8">
+    <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-white mb-4">Privacy Policy</h1>
-        <p className="text-gray-400">Last updated: {new Date().toLocaleDateString()}</p>
+        <h1 className="text-4xl font-bold bg-gradient-to-r from-primary-600 to-primary-400 dark:from-primary-400 dark:to-primary-300 bg-clip-text text-transparent mb-4">
+          Privacy Policy
+        </h1>
+        <p className="text-slate-600 dark:text-slate-400">Last updated: {new Date().toLocaleDateString()}</p>
       </div>
 
-      <div className="bg-slate-800 p-8 rounded-lg border border-slate-700 space-y-6 text-gray-300">
+      <div className="bg-white dark:bg-slate-800 p-8 rounded-xl border border-slate-200 dark:border-slate-700 shadow-lg space-y-6 text-slate-700 dark:text-slate-300">
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">1. Introduction</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">1. Introduction</h2>
           <p>
             OracleVault ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy
             explains how we collect, use, disclose, and safeguard your information when you use our decentralized
@@ -17,9 +19,9 @@ export default function Privacy() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">2. Information We Collect</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">2. Information We Collect</h2>
           
-          <h3 className="text-xl font-semibold text-white mt-4 mb-2">2.1 Blockchain Data</h3>
+          <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-4 mb-2">2.1 Blockchain Data</h3>
           <p>
             When you interact with our smart contracts, blockchain transactions are publicly recorded. This includes:
           </p>
@@ -30,7 +32,7 @@ export default function Privacy() {
             <li>Smart contract interactions</li>
           </ul>
 
-          <h3 className="text-xl font-semibold text-white mt-4 mb-2">2.2 Usage Data</h3>
+          <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-4 mb-2">2.2 Usage Data</h3>
           <p>We may collect information about how you use the Platform:</p>
           <ul className="list-disc list-inside space-y-1 ml-4 mt-2">
             <li>Pages visited and features used</li>
@@ -40,7 +42,7 @@ export default function Privacy() {
             <li>Referral sources</li>
           </ul>
 
-          <h3 className="text-xl font-semibold text-white mt-4 mb-2">2.3 Optional Information</h3>
+          <h3 className="text-xl font-semibold text-slate-900 dark:text-white mt-4 mb-2">2.3 Optional Information</h3>
           <p>If you contact us, we may collect:</p>
           <ul className="list-disc list-inside space-y-1 ml-4 mt-2">
             <li>Email address</li>
@@ -50,7 +52,7 @@ export default function Privacy() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">3. How We Use Your Information</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">3. How We Use Your Information</h2>
           <p>We use collected information to:</p>
           <ul className="list-disc list-inside space-y-1 ml-4 mt-2">
             <li>Provide and maintain the Platform</li>
@@ -64,7 +66,7 @@ export default function Privacy() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">4. Decentralized Nature</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">4. Decentralized Nature</h2>
           <p>
             OracleVault is built on blockchain technology, which means:
           </p>
@@ -77,7 +79,7 @@ export default function Privacy() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">5. Information Sharing</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">5. Information Sharing</h2>
           <p>We do not sell your personal information. We may share information:</p>
           <ul className="list-disc list-inside space-y-1 ml-4 mt-2">
             <li>With service providers who assist in platform operations</li>
@@ -89,7 +91,7 @@ export default function Privacy() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">6. Cookies and Tracking</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">6. Cookies and Tracking</h2>
           <p>
             We may use cookies and similar tracking technologies to enhance your experience. You can control
             cookies through your browser settings. Note that disabling cookies may affect platform functionality.
@@ -97,7 +99,7 @@ export default function Privacy() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">7. Third-Party Services</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">7. Third-Party Services</h2>
           <p>
             The Platform may integrate with third-party services (e.g., RPC providers, analytics tools).
             These services have their own privacy policies, and we encourage you to review them.
@@ -105,7 +107,7 @@ export default function Privacy() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">8. Data Security</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">8. Data Security</h2>
           <p>
             We implement reasonable security measures to protect your information. However, no method of
             transmission over the internet or electronic storage is 100% secure. You are responsible for
@@ -114,7 +116,7 @@ export default function Privacy() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">9. Your Rights</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">9. Your Rights</h2>
           <p>Depending on your jurisdiction, you may have the right to:</p>
           <ul className="list-disc list-inside space-y-1 ml-4 mt-2">
             <li>Access your personal information</li>
@@ -129,7 +131,7 @@ export default function Privacy() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">10. Children's Privacy</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">10. Children's Privacy</h2>
           <p>
             The Platform is not intended for users under 18 years of age. We do not knowingly collect
             information from children.
@@ -137,7 +139,7 @@ export default function Privacy() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">11. Changes to Privacy Policy</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">11. Changes to Privacy Policy</h2>
           <p>
             We may update this Privacy Policy from time to time. Material changes will be notified through
             the Platform. Your continued use after such changes constitutes acceptance of the updated policy.
@@ -145,13 +147,13 @@ export default function Privacy() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">12. Contact Us</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">12. Contact Us</h2>
           <p>
             For questions about this Privacy Policy or our data practices, please contact us at:
           </p>
           <ul className="list-none space-y-1 mt-2">
-            <li>Email: crypmancer@gmail.com</li>
-            <li>Telegram: <a href="https://t.me/cryp_mancer" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300">@cryp_mancer</a></li>
+            <li>Email: <a href="mailto:crypmancer@gmail.com" className="text-primary-600 dark:text-primary-400 hover:underline">crypmancer@gmail.com</a></li>
+            <li>Telegram: <a href="https://t.me/cryp_mancer" target="_blank" rel="noopener noreferrer" className="text-primary-600 dark:text-primary-400 hover:underline">@cryp_mancer</a></li>
           </ul>
         </section>
       </div>

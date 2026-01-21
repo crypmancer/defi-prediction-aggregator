@@ -32,7 +32,7 @@ export function WalletProvider({ children }: { children: ReactNode }) {
 
   const handleWalletConnection = async () => {
     if (!window.ethereum) {
-      alert('Please install MetaMask!')
+      // Toast will be handled in Layout component
       return
     }
 

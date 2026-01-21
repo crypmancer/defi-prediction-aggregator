@@ -1,14 +1,16 @@
 export default function Terms() {
   return (
-    <div className="max-w-4xl mx-auto space-y-8">
+    <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-white mb-4">Terms of Service</h1>
-        <p className="text-gray-400">Last updated: {new Date().toLocaleDateString()}</p>
+        <h1 className="text-4xl font-bold bg-gradient-to-r from-primary-600 to-primary-400 dark:from-primary-400 dark:to-primary-300 bg-clip-text text-transparent mb-4">
+          Terms of Service
+        </h1>
+        <p className="text-slate-600 dark:text-slate-400">Last updated: {new Date().toLocaleDateString()}</p>
       </div>
 
-      <div className="bg-slate-800 p-8 rounded-lg border border-slate-700 space-y-6 text-gray-300">
+      <div className="bg-white dark:bg-slate-800 p-8 rounded-xl border border-slate-200 dark:border-slate-700 shadow-lg space-y-6 text-slate-700 dark:text-slate-300">
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">1. Acceptance of Terms</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">1. Acceptance of Terms</h2>
           <p>
             By accessing and using OracleVault ("the Platform"), you accept and agree to be bound by the terms
             and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
@@ -16,7 +18,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">2. Description of Service</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">2. Description of Service</h2>
           <p>
             OracleVault is a decentralized prediction market aggregator and yield vault platform that:
           </p>
@@ -29,7 +31,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">3. Eligibility</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">3. Eligibility</h2>
           <p>
             You must be at least 18 years old and have the legal capacity to enter into contracts in your jurisdiction.
             You are responsible for ensuring that your use of the Platform complies with all applicable laws and
@@ -38,9 +40,9 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">4. Risk Disclosure</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">4. Risk Disclosure</h2>
           <p className="mb-2">
-            <strong className="text-red-400">IMPORTANT RISK WARNING:</strong>
+            <strong className="text-red-600 dark:text-red-400">IMPORTANT RISK WARNING:</strong>
           </p>
           <ul className="list-disc list-inside space-y-2 ml-4">
             <li>Cryptocurrency and blockchain technology involve substantial risk of loss</li>
@@ -53,7 +55,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">5. User Responsibilities</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">5. User Responsibilities</h2>
           <p>You agree to:</p>
           <ul className="list-disc list-inside space-y-1 ml-4 mt-2">
             <li>Maintain the security of your wallet and private keys</li>
@@ -65,7 +67,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">6. Fees</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">6. Fees</h2>
           <p>
             The Platform may charge fees for certain services, including but not limited to:
           </p>
@@ -81,7 +83,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">7. No Financial Advice</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">7. No Financial Advice</h2>
           <p>
             The Platform, including AI analysis and recommendations, does not provide financial, investment, or
             trading advice. All information is provided for informational purposes only. You should conduct your
@@ -90,7 +92,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">8. Limitation of Liability</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">8. Limitation of Liability</h2>
           <p>
             TO THE MAXIMUM EXTENT PERMITTED BY LAW, ORACLEVAULT AND ITS OPERATORS SHALL NOT BE LIABLE FOR ANY
             INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES,
@@ -99,7 +101,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">9. Indemnification</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">9. Indemnification</h2>
           <p>
             You agree to indemnify and hold harmless OracleVault, its operators, and affiliates from any claims,
             damages, losses, liabilities, and expenses (including legal fees) arising from your use of the Platform
@@ -108,7 +110,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">10. Modification of Terms</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">10. Modification of Terms</h2>
           <p>
             We reserve the right to modify these Terms at any time. Material changes will be notified through the
             Platform or via email. Your continued use of the Platform after such modifications constitutes acceptance
@@ -117,7 +119,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">11. Termination</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">11. Termination</h2>
           <p>
             We reserve the right to suspend or terminate your access to the Platform at any time, with or without
             cause or notice, for any reason including violation of these Terms.
@@ -125,7 +127,7 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">12. Governing Law</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">12. Governing Law</h2>
           <p>
             These Terms shall be governed by and construed in accordance with applicable laws, without regard to
             conflict of law principles.
@@ -133,13 +135,13 @@ export default function Terms() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold text-white mb-4">13. Contact</h2>
+          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">13. Contact</h2>
           <p>
             For questions about these Terms, please contact us at:
           </p>
           <ul className="list-none space-y-1 mt-2">
-            <li>Email: crypmancer@gmail.com</li>
-            <li>Telegram: <a href="https://t.me/cryp_mancer" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300">@cryp_mancer</a></li>
+            <li>Email: <a href="mailto:crypmancer@gmail.com" className="text-primary-600 dark:text-primary-400 hover:underline">crypmancer@gmail.com</a></li>
+            <li>Telegram: <a href="https://t.me/cryp_mancer" target="_blank" rel="noopener noreferrer" className="text-primary-600 dark:text-primary-400 hover:underline">@cryp_mancer</a></li>
           </ul>
         </section>
       </div>

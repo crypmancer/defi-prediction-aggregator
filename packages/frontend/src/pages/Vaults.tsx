@@ -21,7 +21,7 @@ export default function Vaults() {
   if (isLoading) {
     return (
       <div className="flex justify-center items-center h-64">
-        <div className="text-gray-400">Loading vaults...</div>
+        <div className="text-slate-600 dark:text-slate-400 animate-pulse">Loading vaults...</div>
       </div>
     )
   }
@@ -29,7 +29,7 @@ export default function Vaults() {
   if (error) {
     return (
       <div className="flex justify-center items-center h-64">
-        <div className="text-red-400">Error loading vaults</div>
+        <div className="text-red-600 dark:text-red-400">Error loading vaults</div>
       </div>
     )
   }
@@ -47,16 +47,16 @@ export default function Vaults() {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 animate-fade-in">
       <div className="flex justify-between items-center">
-        <h1 className="text-3xl font-bold text-white">Yield Vaults</h1>
-        <div className="text-gray-400">
+        <h1 className="text-3xl font-bold text-slate-900 dark:text-white">Yield Vaults</h1>
+        <div className="px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-lg text-slate-600 dark:text-slate-400 font-medium">
           {vaults?.length || 0} {vaults?.length === 1 ? 'vault' : 'vaults'}
         </div>
       </div>
 
       <div className="grid gap-6">
-        {vaults?.map((vault) => {
+        {vaults?.map((vault, index) => {
           const apy = calculateAPY(vault)
           const totalAssets = formatTokenAmount(vault.totalAssets)
           const utilization = parseFloat(vault.vaultCap) > 0
@@ -67,41 +67,44 @@ export default function Vaults() {
             <Link
               key={vault.address}
               to={`/vaults/${vault.address}`}
-              className="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-primary-500 transition cursor-pointer"
+              className="group bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-primary-400 dark:hover:border-primary-600 transition-all duration-300 cursor-pointer hover:shadow-xl hover:shadow-primary-500/10 hover:-translate-y-1"
+              style={{ animationDelay: `${index * 50}ms` }}
             >
               <div className="flex justify-between items-start">
                 <div className="flex-1">
-                  <div className="flex items-center space-x-2 mb-3">
-                    <Coins className="h-5 w-5 text-primary-400" />
-                    <h3 className="text-xl font-semibold text-white">Prediction Market Vault</h3>
+                  <div className="flex items-center space-x-2 mb-4">
+                    <div className="p-2 bg-primary-100 dark:bg-primary-900/30 rounded-lg">
+                      <Coins className="h-5 w-5 text-primary-600 dark:text-primary-400" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-slate-900 dark:text-white">Prediction Market Vault</h3>
                   </div>
                   <div className="grid md:grid-cols-3 gap-4 mb-4">
-                    <div>
-                      <div className="text-gray-400 text-sm">Total Assets</div>
-                      <div className="text-white font-semibold">{totalAssets} tokens</div>
+                    <div className="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-lg">
+                      <div className="text-slate-600 dark:text-slate-400 text-sm mb-1">Total Assets</div>
+                      <div className="text-slate-900 dark:text-white font-bold text-lg">{totalAssets} tokens</div>
                     </div>
-                    <div>
-                      <div className="text-gray-400 text-sm">Estimated APY</div>
-                      <div className="text-green-400 font-semibold flex items-center space-x-1">
+                    <div className="p-3 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-800">
+                      <div className="text-slate-600 dark:text-slate-400 text-sm mb-1">Estimated APY</div>
+                      <div className="text-green-600 dark:text-green-400 font-bold text-lg flex items-center space-x-1">
                         <TrendingUp className="h-4 w-4" />
                         <span>{apy}%</span>
                       </div>
                     </div>
-                    <div>
-                      <div className="text-gray-400 text-sm">Fees</div>
-                      <div className="text-white text-sm">
+                    <div className="p-3 bg-slate-50 dark:bg-slate-900/50 rounded-lg">
+                      <div className="text-slate-600 dark:text-slate-400 text-sm mb-1">Fees</div>
+                      <div className="text-slate-900 dark:text-white text-sm font-medium">
                         {vault.performanceFeeBps / 100}% perf / {vault.managementFeeBps / 100}% mgmt
                       </div>
                     </div>
                   </div>
-                  <div className="flex items-center space-x-4 text-sm">
-                    <div className="flex items-center space-x-2 text-gray-400">
+                  <div className="flex flex-wrap items-center gap-4 text-sm">
+                    <div className="flex items-center space-x-2 text-slate-600 dark:text-slate-400 px-3 py-1.5 bg-slate-100 dark:bg-slate-700 rounded-lg">
                       <Lock className="h-4 w-4" />
-                      <span>Min: {formatTokenAmount(vault.minDeposit)}</span>
+                      <span>Min: <strong className="text-slate-900 dark:text-white">{formatTokenAmount(vault.minDeposit)}</strong></span>
                     </div>
                     {parseFloat(vault.vaultCap) > 0 && (
-                      <div className="text-gray-400">
-                        Utilization: {utilization.toFixed(1)}%
+                      <div className="text-slate-600 dark:text-slate-400 px-3 py-1.5 bg-slate-100 dark:bg-slate-700 rounded-lg">
+                        Utilization: <strong className="text-slate-900 dark:text-white">{utilization.toFixed(1)}%</strong>
                       </div>
                     )}
                   </div>
@@ -113,7 +116,7 @@ export default function Vaults() {
       </div>
 
       {(!vaults || vaults.length === 0) && (
-        <div className="text-center py-12 text-gray-400">
+        <div className="text-center py-12 text-slate-500 dark:text-slate-400">
           No vaults available at the moment
         </div>
       )}
